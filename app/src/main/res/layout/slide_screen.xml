@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/relative_bg"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingBottom="10dp"
+            android:text="Australian Shepherd"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/ivLargeImg"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/tvName"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_imglarge" />
+
+        <LinearLayout
+            android:id="@+id/Linear4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivLargeImg"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="40dp">
+
+            <ImageView
+                android:id="@+id/tvHanIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_white_hand"
+
+                />
+
+            <TextView
+                android:id="@+id/tvQuality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="10dp"
+                android:text="Friendly, High-spirited..."
+                android:textColor="@color/white"
+                android:textSize="13sp"
+
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Linear4"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_medium"
+            android:maxLines="3"
+            android:text="Intelligent, Hard worki. Intelligent, Hard work Intelligent, Hard work. Intelligent, Hard worki...Intelligent, Hard worki...Intelligent, Hard worki...."
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="73dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="350dp">
+                <ImageView
+                    android:id="@+id/ivDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:paddingBottom="25dp"
+                    android:src="@drawable/icon_delete" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="350dp">
+                <ImageView
+                    android:id="@+id/ivBigHeart"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:paddingBottom="25dp"
+                    android:src="@drawable/icon_big_heart" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="350dp">
+                <ImageView
+                    android:id="@+id/ivSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/icon_setting" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

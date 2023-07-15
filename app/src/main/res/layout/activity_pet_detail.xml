@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityPetDetail">
+
+    <LinearLayout
+        android:id="@+id/ll_PetDetail"
+        android:layout_width="match_parent"
+        android:layout_height="279dp"
+        android:background="@drawable/pet_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_DetailPetCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Labrador"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:layout_gravity="top"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="475dp"
+        android:background="@drawable/pet_detail_card_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:id="@+id/tv_PetCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Labrador"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="22sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:id="@+id/iv_PetImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hand"/>
+            <TextView
+                android:id="@+id/tv_PetFeatures"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friendly, Helpful, Intelligent"
+                android:textSize="14sp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/iv_PetImage"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age:"
+                android:textColor="@color/dark_charcoal"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tv_PetAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="2 years Old"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Breed:"
+                android:textColor="@color/dark_charcoal"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tv_PetBreed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Labrador"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender:"
+                android:textColor="@color/dark_charcoal"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:id="@+id/tv_PetGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size:"
+                android:textColor="@color/dark_charcoal"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:id="@+id/tv_PetSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 ft"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_PetDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pet_detail"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_light"
+                android:layout_marginTop="30dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Location"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:text="Location"
+                android:textAllCaps="false"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="5dp"
+                android:background="@drawable/btn_bg"
+                android:padding="15dp"
+                android:layout_alignParentLeft="true"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_ContactOwner"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:text="Contact Owner"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/call"
+                android:background="@drawable/btn_bg"
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

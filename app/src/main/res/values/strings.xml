@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pawfect Match</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="api_key">AIzaSyD_O2WO97pHEZTuav5WIzBK1MZMBK8JwnA</string>
+    <string name="select">Select Item</string>
+    <string name="pet_detail">The Labrador, often abbreviated to Labrador or Lab, is a medium-large gun dog from the United Kingdom that was developed from imported Canadian fishing dogs. </string>
+</resources>

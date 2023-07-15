@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/Relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Pet Detail"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/blue"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_filter"
+            android:layout_gravity="center"
+            android:paddingRight="20dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/Linear1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="20dp"
+        android:background="@drawable/edt_bg"
+        android:paddingBottom="20dp">
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Relative1"
+        android:layout_above="@+id/Linear1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/relative_bg">
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Australian Shepherd"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            />
+        <ImageView
+            android:id="@+id/ivLargeImg"
+            android:layout_below="@+id/tvName"
+            android:layout_width="350sp"
+            android:layout_height="300dp"
+            android:src="@drawable/icon_imglarge"
+            android:layout_centerHorizontal="true"
+            />
+
+        <LinearLayout
+            android:id="@+id/Linear4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivLargeImg"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/tvHanIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_white_hand"
+
+                />
+
+            <TextView
+                android:id="@+id/tvQuality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="10dp"
+                android:text="Friendly, High-spirited..."
+                android:textColor="@color/white"
+                android:textSize="13sp"
+
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Linear4"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_medium"
+            android:maxLines="3"
+            android:layout_margin="20dp"
+            android:text="Intelligent, Hard worki. Intelligent, Hard work Intelligent, Hard work. Intelligent, Hard worki...Intelligent, Hard worki...Intelligent, Hard worki...."
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_delete"
+                android:paddingBottom="20dp"
+                />
+            <ImageView
+                android:id="@+id/ivBigHeart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_big_heart"
+                android:layout_toRightOf="@+id/ivDelete"
+                android:paddingBottom="20dp"
+                android:paddingLeft="50dp"
+                />
+            <ImageView
+                android:id="@+id/ivSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_setting"
+                android:layout_toRightOf="@id/ivBigHeart"
+                android:paddingBottom="20dp"
+                android:paddingLeft="50dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

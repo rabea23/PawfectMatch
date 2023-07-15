@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pet_Profile"
+    android:paddingLeft="15sp"
+    android:paddingRight="15sp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/rv_Layout"
+                android:layout_weight="2.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Find a new friend for your pet"
+                    android:textColor="@color/blue_jeans"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rv_Layout2"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:gravity="right"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Pet"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:id="@+id/addNew"
+                    android:drawableRight="@drawable/plus"
+                    android:backgroundTint="@color/blue_jeans"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_PetRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>

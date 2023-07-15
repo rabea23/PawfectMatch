@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="5dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/card_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:background="@drawable/card_bg">
+
+        <ImageView
+            android:id="@+id/iv_PetImage"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/pet_profile"
+            android:background="@drawable/image_card_bg"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/tv_PetCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_PetImage"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Australian Shepherd"
+            android:textColor="@color/dark_charcoal"
+            android:textSize="14sp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_PetFeatures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_PetImage"
+            android:fontFamily="@font/poppins_light"
+            android:text="Intelligent, Hard worki..."
+            android:textSize="12sp"
+            android:paddingLeft="15dp"
+            android:layout_below="@id/tv_PetCategory"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/light_slate_gray"
+            />
+        <ImageView
+            android:id="@+id/iv_Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/menu"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
